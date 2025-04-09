@@ -13,12 +13,12 @@ modulated = modulated / np.max(np.abs(modulated))
 
 N = len(modulated)
 
-# plt.figure(figsize=(10, 5))
-# time = np.linspace(0, N / sample_rate, N)
-# plt.plot(time, modulated)
-# plt.title("Time Spectrum of Modulated Signal")
-# plt.xlabel("time (s)")
-# plt.ylabel("Magnitude")
+plt.figure(figsize=(10, 5))
+time = np.linspace(0, N / sample_rate, N)
+plt.plot(time, modulated)
+plt.title("Time Spectrum of Modulated Signal")
+plt.xlabel("time (s)")
+plt.ylabel("Magnitude")
 
 
 fft_result = np.fft.fft(modulated) # complex numbers are returned
@@ -35,26 +35,26 @@ carrier_freq = frequencies[peak_index]
 print(f"Estimated carrier frequency (Fc): {carrier_freq:.2f} Hz")
 
 
-# plt.figure(figsize=(10, 5))
-# plt.plot(frequencies, magnitude)
-# plt.title("Frequency Spectrum of Modulated Signal")
-# plt.xlabel("Frequency (Hz)")
-# plt.ylabel("Magnitude")
-# plt.grid()
-# plt.show()
+plt.figure(figsize=(10, 5))
+plt.plot(frequencies, magnitude)
+plt.title("Frequency Spectrum of Modulated Signal")
+plt.xlabel("Frequency (Hz)")
+plt.ylabel("Magnitude")
+plt.grid()
+plt.show()
 
 
 carrier = np.cos(2 * np.pi * carrier_freq * (1 / sample_rate) * np.arange(len(modulated)))
 demodulated = carrier*modulated
 
-# plt.figure(figsize=(10, 5))
-# time = np.linspace(0, N / sample_rate, N)
-# plt.plot(time, demodulated)
-# plt.title("time Spectrum of demodulated Signal")
-# plt.xlabel("Frequency (Hz)")
-# plt.ylabel("Magnitude")
-# plt.grid()
-# plt.show()
+plt.figure(figsize=(10, 5))
+time = np.linspace(0, N / sample_rate, N)
+plt.plot(time, demodulated)
+plt.title("time Spectrum of demodulated Signal")
+plt.xlabel("Frequency (Hz)")
+plt.ylabel("Magnitude")
+plt.grid()
+plt.show()
 
 fft_result_demodulated = np.fft.fft(demodulated) # complex numbers are returned
 frequencies_demodulated = np.fft.fftfreq(N, d=1/sample_rate)
