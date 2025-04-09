@@ -1,3 +1,4 @@
+
 # Audio_Filtering_ERC
 
 We are given A Amplitude-Modulated wav file. This file is noisy and the real frequencies are hidden.
@@ -50,7 +51,14 @@ To remove the Noise we follow these steps:
    All the graphs were plotted through matplotlib.pyplot. The main.py has all the implementations and plotting code.
 
    Clean_output_real_real.wav is the final output of andrew garfield laughing :)
-   
+
+   Final audio: 
+
+https://github.com/user-attachments/assets/9680e102-affc-4b56-863a-ee5f10bc511b
+
+This audio still contains a lot of missing frequencies and noise issues, i couldnt get it to sound perfect. I will look into it more and hopefully get a cleaner version.
+
+
 
 
    
