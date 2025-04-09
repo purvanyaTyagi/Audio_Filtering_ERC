@@ -50,7 +50,7 @@ To remove the Noise we follow these steps:
 
    All the graphs were plotted through matplotlib.pyplot. The main.py has all the implementations and plotting code.
 
-   Clean_output_real_real.wav is the final output of andrew garfield laughing :)
+   Clean_output_real_real.wav is the final output :) 
 
    Final audio: 
 
