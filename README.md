@@ -52,7 +52,7 @@ To remove the Noise we follow these steps:
 
    Clean_output_real_real.wav is the final output :) 
 
-   Final audio: 
+   Final audio: (Andrew Garfield Laughing lol)
 
 https://github.com/user-attachments/assets/9680e102-affc-4b56-863a-ee5f10bc511b
 
