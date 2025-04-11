@@ -113,7 +113,7 @@ lowcut = 1000.0     # Lower cutoff frequency in Hz
 highcut = 1200.0   # Upper cutoff frequency in Hz
 
 clean_signal = bandpass_filter(demodulated, 1000, 1200, sample_rate)
-clean_signal = frequency_shift(clean_signal, sample_rate, -500)  # Shift back to baseband
+clean_signal = frequency_shift(clean_signal, sample_rate, -500)  # Shift back by 500 to reduce pitch
 
 # clean_signal = bandstop_filter(demodulated, lowcut, highcut, sample_rate)
 # clean_signal = butter_lowpass_filter(clean_signal, 1200, sample_rate)
